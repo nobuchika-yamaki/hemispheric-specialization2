@@ -41,3 +41,26 @@ This repository enables full reproduction of:
 
 ## 2. Directory Structure
 
+### File descriptions
+
+| File | Purpose |
+|------|---------|
+| **config.py** | Defines all simulation parameters (population size, mutation SD, grid size, seeds). |
+| **envs.py** | Implements the Spatial and Planar environments and a custom NumPy-based Gaussian blur. |
+| **model.py** | Defines the hemispheric agent (integration, mismatch, decision variable, reaction time). |
+| **evolution.py** | Full evolutionary algorithm (initialization, evaluation, selection, mutation). |
+| **stats_analysis.py** | Runs all lineages and performs Wilcoxon / t-tests; saves results. |
+| **run_simulations.py** | Main entry point. Executes the full simulation + statistical analysis pipeline. |
+
+---
+
+## 3. Installation
+
+The code requires only **NumPy** and **SciPy**.
+
+### Install dependencies
+
+```bash
+pip install numpy scipy
+
+
